@@ -1,0 +1,109 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	background-image: url ("images/whitebrick.jpg");
+	backgrouond-repeat: no-repeat;
+	background-position: right top;
+}
+.rubik-bold {
+  font-family: "Rubik", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+.rubik-medium {
+  font-family: "Rubik", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+#container {
+	width: 900px;
+	margin: 0 auto;
+	background-color: aqua
+}
+.nav {
+	background-color:black;
+	padding: 10px 0px 10px 0px
+}
+.mission {
+	width: 800px;
+	height: 800 px;
+	background color:yellow;
+	margin: 10px 10px 10px 10px;
+	padding: 15px 30px 15px 30px;
+}
+p.mission {
+	color:black;
+	text-align:left;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"
+	
+}
+
+.marquee {
+	width: 900px;
+	height: 500 px;
+	background color:black;
+	align-content: center;
+}
+.left {
+	width: 300px;
+	height: 420px;
+	background-color: floralwhite;
+	Float: left;
+	margin: 10px 10px 10px 10px;
+	padding: 15px 15px 15px 15px;
+	border:thin 3px #99C8D8;
+	opacity: 90%;
+}
+
+.right {
+	width: 500px;
+	height: 420px;
+	background-color: floralwhite;
+	Float: right;
+	margin: 10px 10px 10px 10px;
+	padding: 15px 15px 15px 15px;
+	border:thin 3px #99C8D8;
+	opacity: 90%;
+}
+p.boxheader{
+	text-align: center;
+}
+
+h2.quote{
+	font-size: 45px;
+}
+p.author {
+	text-align: right
+}
+.fullwidth{
+	width: 850px;
+	height: 500px;
+	background-color: floralwhite;
+	border-radius: 15px;
+	Float: right;
+	margin: 10px 10px 10px 10px;
+	padding: 15px 15px 15px 15px;
+	border: thick rgba(203,14,17,0.99);
+	opacity: 90%;
+	
+}
+h3{text-align: center;}
+.sitemap{
+	clear:both;
+	width: 850px;
+	height: 200px;
+	background-color: black;
+	color: white;
+	border-radius: 15px;
+	margin: 10px 10px 10px 10px;
+	padding: 15px 15px 15px 15px;
+	display: none;
+}
+footer{
+	clear:both;
+	text-align: center;
+	color:indianred;
+}
