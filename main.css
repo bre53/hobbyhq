@@ -1,9 +1,11 @@
 @charset "UTF-8";
 /* CSS Document */
+
 body {
-	background-image: url ("images/whitebrick.jpg");
+  background-image: url("images/whitebrick.jpg");
 	backgrouond-repeat: no-repeat;
-	background-position: right top;
+	background-position: center top;
+	background-size:cover;
 }
 .rubik-bold {
   font-family: "Rubik", serif;
@@ -21,18 +23,17 @@ body {
 #container {
 	width: 900px;
 	margin: 0 auto;
-	background-color: aqua
 }
 .nav {
-	background-color:black;
+	height: 50px;
+	background-color: black;
 	padding: 10px 0px 10px 0px
 }
 .mission {
-	width: 800px;
+	width: 900px;
 	height: 800 px;
-	background color:yellow;
-	margin: 10px 10px 10px 10px;
-	padding: 15px 30px 15px 30px;
+	padding: 5px 15px 15px 15px;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
 }
 p.mission {
 	color:black;
@@ -40,11 +41,15 @@ p.mission {
 	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif"
 	
 }
+a:hover {
+	font-size: 1.1em;
+	text-decoration: none;
+}
 
 .marquee {
 	width: 900px;
 	height: 500 px;
-	background color:black;
+	background color: black;
 	align-content: center;
 }
 .left {
@@ -69,25 +74,7 @@ p.mission {
 	opacity: 90%;
 }
 p.boxheader{
-	text-align: center;
-}
-
-h2.quote{
-	font-size: 45px;
-}
-p.author {
-	text-align: right
-}
-.fullwidth{
-	width: 850px;
-	height: 500px;
-	background-color: floralwhite;
-	border-radius: 15px;
-	Float: right;
-	margin: 10px 10px 10px 10px;
-	padding: 15px 15px 15px 15px;
-	border: thick rgba(203,14,17,0.99);
-	opacity: 90%;
+	text-align: centr
 	
 }
 h3{text-align: center;}
