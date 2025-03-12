@@ -58,9 +58,23 @@ p.missionleft {
 }
 .video{
 	width:900px;
-	height: 600px;
+	height: 800px;
 	align-content: center;
 	padding: 10px 10px 10px 10px;
+}
+.formphoto{
+	float:left;
+	width: 400px;
+	height: 450px;
+	align-content: right;
+}
+.form{
+	background-color: gray;
+	float:right;
+	width:500px;
+	height:260px;
+	padding: 0px 0px 0px 0px;
+	align-content: center;
 }
 a:hover {
 	font-size: 1.1em;
@@ -101,7 +115,7 @@ td, th{
 }
 
 footer{
-	clear:both;
+	clear: both;
 	text-align: center;
 	color:indianred;
 }
