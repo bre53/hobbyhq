@@ -30,6 +30,9 @@ body {
 	font: oblique;
 	padding: 10px 0px 10px 0px
 }
+p.nav{
+	color: white;
+}
 .missionleft {
 	float:left;
 	width: 500px;
@@ -78,7 +81,7 @@ p.missionleft {
 	align-content: center;
 }
 a:hover {
-	font-size: 1.1em;
+	color: indianred;
 	text-decoration: none;
 }
 
