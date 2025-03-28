@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hobby Finder Quiz</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 40px; }
+        .question { margin-bottom: 20px; font-size: 18px; }
+        .options button { display: block; width: 80%; margin: 5px auto; padding: 10px; font-size: 16px; }
+        #result { display: none; font-size: 20px; font-weight: bold; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>🎯 Hobby Finder Quiz</h1>
+    <div id="quiz">
+        <div class="question">1. How do you like to spend your free time?</div>
+        <div class="options">
+            <button onclick="selectAnswer('A')">Exploring the outdoors 🌿</button>
+            <button onclick="selectAnswer('B')">Being creative 🎨</button>
+            <button onclick="selectAnswer('C')">Learning new skills 📚</button>
+            <button onclick="selectAnswer('D')">Socializing 🎭</button>
+        </div>
+    </div>
+    <div id="result"></div>
+
+    <script>
+        let scores = { A: 0, B: 0, C: 0, D: 0 };
+        let questionIndex = 0;
+        const questions = [
+            "How do you like to spend your free time?",
+            "What best describes your personality?",
+            "How do you prefer to unwind?",
+            "What’s your budget for a new hobby?",
+            "Do you prefer hobbies you can do alone or with others?"
+        ];
+        const options = [
+            ["Exploring the outdoors 🌿", "Being creative 🎨", "Learning new skills 📚", "Socializing 🎭"],
+            ["Adventurous 🚴‍♂️", "Imaginative ✍️", "Curious 🧐", "Outgoing 🎉"],
+            ["Going for a walk 🏞️", "Crafting or cooking 🍳", "Reading or gaming 📖", "Watching movies or chatting 🎮"],
+            ["Low-cost DIY 💰", "Willing to invest in supplies 🎭", "Prefer digital hobbies 🖥️", "Enjoy spending on experiences 🎟️"],
+            ["Alone ☕", "Either 🎨", "Mostly solo 🔍", "With others 🗣️"]
+        ];
+
+        function selectAnswer(choice) {
+            scores[choice]++;
+            questionIndex++;
+            
+            if (questionIndex < questions.length) {
+                document.querySelector(".question").innerText = (questionIndex + 1) + ". " + questions[questionIndex];
+                document.querySelectorAll(".options button").forEach((btn, index) => {
+                    btn.innerText = options[questionIndex][index];
+                    btn.setAttribute("onclick", `selectAnswer('${String.fromCharCode(65 + index)}')`);
+                });
+            } else {
+                showResult();
+            }
+        }
+
+        function showResult() {
+            document.getElementById("quiz").style.display = "none";
+            let highest = Object.keys(scores).reduce((a, b) => scores[a] > scores[b] ? a : b);
+            let resultText = {
+                A: "🌿 Active & Outdoor Hobbies: Hiking, biking, kayaking, yoga!",
+                B: "🎨 Creative Hobbies: Painting, photography, writing, DIY crafts!",
+                C: "📚 Learning Hobbies: Coding, language learning, genealogy, chess!",
+                D: "🎭 Social & Performing Hobbies: Improv, dance, tabletop RPGs!"
+            };
+            document.getElementById("result").innerText = "Your Hobby Match: " + resultText[highest];
+            document.getElementById("result").style.display = "block";
+        }
+    </script>
+</body>
+</html>
