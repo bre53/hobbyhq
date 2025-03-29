@@ -181,12 +181,18 @@ td, th{
 .flex-left{
 	background-color:white;
 	padding:10px;
-	flex:50%;
+	flex:40%;
 }
 .flex-right{
 	background-color:white;
 	padding:10px;
-	flex:50%;
+	flex:40%;
+	text-align: center;
+}
+@media (max-width: 800px) {
+  .flex-right, .flex-left {
+    flex: 100%;
+  }
 }
 footer{
 	clear: both;
