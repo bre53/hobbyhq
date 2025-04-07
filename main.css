@@ -189,6 +189,41 @@ td, th{
 	flex:40%;
 	text-align: center;
 }
+
+    .hobby-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+	background-color: black;
+    }
+
+    .hobby-card {
+      background-color: yellowgreen;
+      padding: 5px;
+    }
+
+    .hobby-card h2 {
+      color: #A4DAF4;
+      margin-bottom: 0.5rem;
+}
+.hobby-card p {
+	color:white;
+	margin: 5px; 
+}
+
+    /* Responsive styles for larger screens */
+    @media (min-width: 600px) {
+      .hobby-grid {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+
+      .hobby-card {
+        flex: 1 1 calc(33% - 1rem);
+        max-width: calc(33% - 1rem);
+      }
+    }
 @media (max-width: 800px) {
   .flex-right, .flex-left {
     flex: 100%;
