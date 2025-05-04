@@ -1,0 +1,69 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {box-sizing: border-box;}
+.rubik-passion {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+.rubik-body {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+body { 
+  margin: 0;
+  color: black;
+  background: #4f97e3;
+  font-family: Rubik;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: white;
+}
+
+.logo img {
+  height: 50px; 
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+  color: #e3ad4f;
+}
+.container {
+	width: 1020px;
+}
+.passion {
+	display: flex;
+	width: auto;
+	margin-right: 20px;
+}
+.passion img {
+	width: 100%;
+}
+.welcome {
+	display:flex;
+	flex-grow: 1;
+	margin-right: 10px;
+}
