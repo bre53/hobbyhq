@@ -16,9 +16,9 @@
 }
 
 body { 
-  margin: 0;
+  margin: 0 auto;
   color: black;
-  background: #4f97e3;
+  background: white;
   font-family: Rubik;
 }
 
@@ -51,19 +51,28 @@ body {
 .nav-menu li a:hover {
   color: #e3ad4f;
 }
-.container {
-	width: 1020px;
+#container {
+	margin: 0 auto;
+	width: 100%;
+	background-color: #whitee;
+}
+#container2 {
+	margin: 0 auto;
+	width: 100%;
+	background-color: #4f97e3;
 }
 .passion {
 	display: flex;
-	width: auto;
-	margin-right: 20px;
+	width: 65%;
+	padding: 20px;
 }
 .passion img {
 	width: 100%;
+	padding: 10px;
 }
 .welcome {
 	display:flex;
-	flex-grow: 1;
+	width:20%;
 	margin-right: 10px;
+	padding: 20px;
 }
