@@ -1,81 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <link rel="stylesheet" href="main.css">
-	<title>Hobby Headquarters</title>
+<meta charset="UTF-8">
+<title>Basic</title>
+<link href="main2.css" rel="stylesheet" type="text/css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
-  <title>Hobby Explorer</title>
+
 <body>
+<div id="container">
+	<nav class="navbar">
+    <div class="logo">
+      <img src="assets/images/HobbyHQlogo.jpg" alt="Hobby HQ Logo">
+    </div>
+    <ul class="nav-menu">
+      <li><a href="restart.html">Home</a></li>
+      <li><a href="explorer.html">Hobby Explorer</a></li>
+      <li><a href="benefits.html">Benefits</a></li>
+      <li><a href="getstarted.html">Getting Started</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+	<div id="container2">
+		<div class="hobbies grid-1">
+			<h4>Kayaking</h4> Sports and Outdoors</div>
+		<div class="hobbies grid-2">Hobby 2</div>
+	
+		</div>
+	</div>
 
-<div class="container">
-	<header><h1>HOBBY HQ</h1></header>
-	<nav class="nav">
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="hobbysearch.html">Hobby Search</a></li>
-			<li><a href="blog.html">Blog</a></li>
-			<li><a href="about.html">About</a></li>
-		</ul>
-	</nav>	
-  <main>
-	<div class="container"><h3>Hobby Explorer</h3></div>
-    <div class="hobby-grid">
-      <div class="hobby-card">
-        <h2>Photography</h2>
-        <p>Capture moments and develop your artistic eye with photography.</p>
-      </div>
-      <div class="hobby-card">
-        <h2>Gardening</h2>
-        <p>Connect with nature and grow your own vegetables, herbs, or flowers.</p>
-      </div>
-      <div class="hobby-card">
-        <h2>Cooking</h2>
-        <p>Experiment with flavors, learn new cuisines, and enjoy homemade meals.</p>
-      </div>
-      <div class="hobby-card">
-        <h2>Painting</h2>
-        <p>Express your creativity through colors and brush strokes.</p>
-      </div>
-      <div class="hobby-card">
-        <h2>Hiking</h2>
-        <p>Explore the outdoors, stay active, and enjoy scenic landscapes.</p>
-      </div>
-      <div class="hobby-card">
-        <h2>Knitting</h2>
-        <p>Craft cozy items with yarn while enjoying a relaxing activity.</p>
-      </div>
-    </div><p>Click the button to get your coordinates.</p>
-
-<button onclick="getLocation()">Try It</button>
-
-<p id="demo"></p>
-  </main>
-<script>
-const x = document.getElementById("demo");
-
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(success, error);
-  } else { 
-    x.innerHTML = "Geolocation is not supported by this browser.";
-  }
-}
-
-function success(position) {
-  x.innerHTML = "Latitude: " + position.coords.latitude + 
-  "<br>Longitude: " + position.coords.longitude;
-}
-
-function error() {
-  alert("Sorry, no position available.");
-}
-</script>
-  <footer>
-    <p>©Breanna Powers 2025</p>
-  </footer>
 </body>
+<footer>
+	<footer class="site-footer">
+  <div class="footer-content">
+    <div class="logo">
+      <img src="assets/images/HobbyHQlogo.jpg" alt="Logo">
+    </div>
+
+
+    <div class="footer-social">
+      <p>Follow us on <a href="https://instagram.com/hobbyheadquarter" target="_blank">Instagram</a>!</p>
+    </div>
+
+    <ul class="footer-links">
+      <li><a href="restart.html">Home</a></li>
+      <li><a href="explorer.html">Hobby Explorer</a></li>
+      <li><a href="benefits.html">Benefits</a></li>
+      <li><a href="getstarted.html">Getting Started</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>	
+</footer>
 </html>
