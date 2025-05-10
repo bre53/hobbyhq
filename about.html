@@ -2,86 +2,82 @@
 <html>
 <head>
 <meta charset="UTF-8">
-	  <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
-  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-  <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
-  <script>
-  $( function() {
-    $( "input" ).checkboxradio();
-    $( "fieldset" ).controlgroup();
-  } );
-  </script>
-	</head>
- 
- 
-
-	<link rel="stylesheet" href="main.css">
-	<title>Hobby Headquarters - About</title>
+<title>Basic</title>
+<link href="main2.css" rel="stylesheet" type="text/css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
 
-		
 <body>
-	<div class="container">
-	<header><h1>HOBBY HQ</h1></header>
-	<nav class="nav">
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="hobbysearch.html">Hobby Search</a></li>
-			<li><a href="blog.html">Blog</a></li>
-			<li><a href="about.html">About</a></li>
-		</ul>
-	</nav>	
+	<div id="container">
+	<nav class="navbar">
+    <div class="logo">
+      <img src="assets/images/HobbyHQlogo.jpg" alt="Hobby HQ Logo">
+    </div>
+    <ul class="nav-menu">
+      <li><a href="restart.html">Home</a></li>
+      <li><a href="explorer.html">Hobby Explorer</a></li>
+      <li><a href="benefits.html">Benefits</a></li>
+      <li><a href="getstarted.html">Getting Started</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+<div id="container2">
+  <div class="item about"
+      <h2>About Us</h2>
+      <p>Welcome to Hobby HQ, your go-to destination for discovering new hobbies and finding fulfilling ways to spend your time. Whether you're looking to unwind, develop new skills, or simply add some fun to your daily routine, Hobby HQ is here to guide you on your journey.</p>
+      <p>We believe that hobbies are more than just pastimes—they’re opportunities to explore your passions, boost creativity, and improve overall well-being. Our mission is to help you find a hobby that fits your lifestyle by providing detailed insights, practical tips, and inspiration.</p>
+      <p>At Hobby HQ, we explore a wide variety of hobbies, from creative arts and outdoor adventures to tech-based activities and hands-on DIY projects. Each hobby we feature comes with key benefits, beginner-friendly guidance, and helpful resources to get you started.</p>
+      <p>No matter your experience level, there’s always something new to learn. Join us as we dive into the world of hobbies and help you find the perfect pastime that sparks joy and keeps you engaged.</p>
+    </div>
 
-  <div class="flex-container">
-	  <div class="flex-about">
-	<h3>ABOUT US</h3>
-			<p>Welcome to Hobby HQ, your go-to destination for discovering new hobbies and finding fulfilling ways to spend your time. Whether you're looking to unwind, develop new skills, or simply add some fun to your daily routine, Hobby HQ is here to guide you on your journey.<br>
-<br>
-We believe that hobbies are more than just pastimes—they’re opportunities to explore your passions, boost creativity, and improve overall well-being. Our mission is to help you find a hobby that fits your lifestyle by providing detailed insights, practical tips, and inspiration.<br>
-<br>
-At Hobby HQ, we explore a wide variety of hobbies, from creative arts and outdoor adventures to tech-based activities and hands-on DIY projects. Each hobby we feature comes with key benefits, beginner-friendly guidance, and helpful resources to get you started.<br>
-<br>
-No matter your experience level, there’s always something new to learn. Join us as we dive into the world of hobbies and help you find the perfect pastime that sparks joy and keeps you engaged.</p>
-	  </div>
+    <div class="item partner">
+      <h2>Partner</h2>
+      <p>Are you a brand, creator, or organization looking to connect with an engaged audience passionate about hobbies and personal growth? Hobby HQ welcomes opportunities for sponsorships, collaborations, and partnerships.</p>
+      <p>Whether you're interested in showcasing your products, sharing expertise, or working together on exciting projects, we’d love to hear from you.</p>
+      <p>Let’s inspire more people to discover new hobbies and enrich their lives. Reach out to us today to explore how we can work together!</p>
+    </div>
+	<div class="item contact-photo">
+		<img src="assets/images/FindPassion.jpg" alt="Contact Us">
+	</div>
+    <div class="item contactus">
+      <h2>Contact Us</h2>
+      <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
 
-	<div class="flex-left"><h3>PARTNER</h3>
-			<p>Are you a brand, creator, or organization looking to connect with an engaged audience passionate about hobbies and personal growth? Hobby HQ welcomes opportunities for sponsorships, collaborations, and partnerships. Whether you're interested in showcasing your products, sharing expertise, or working together on exciting projects, we’d love to hear from you.<br>
-			<br>	
-			Let’s inspire more people to discover new hobbies and enrich their lives. Reach out to us today to explore how we can work together!</p></div>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
 
-	  
-		<div class="flex-right"><h3>CONTACT</h3>
-			<form>
-			<label for="FirstName">First Name</label><br>
-			<input type="text" id="FirstName" name="FirstName"><br>
-			<label for="LastName">Last Name</label><br>
-			<input type="text" id="LastName" name="LastName"><br>
-			<label for="Email">Email Address</label><br>
-			<input type="text" id="email" name="Email"><br><br>
-			<input type="submit" value="submit">
-			
-		</form>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="5" required></textarea><br><br>
 
-<div class="widget">
- 
-  <h2>Tell Us More</h2>
-  <fieldset>
-    <legend>I am a: </legend>
-    <label for="radio-1">Vendor</label>
-    <input type="radio" name="radio-1" id="radio-1">
-    <label for="radio-2">Creator/Influencer</label>
-    <input type="radio" name="radio-1" id="radio-2">
-    <label for="radio-3">Hobbyist</label>
-    <input type="radio" name="radio-1" id="radio-3">
-  </fieldset>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
 </div>
-		  </div>
-		</div>
 
-		</div>
-</body>
 
+<footer class="site-footer">
+  <div class="footer-content">
+    <div class="logo">
+      <img src="assets/images/HobbyHQlogo.jpg" alt="Logo">
+    </div>
+
+    <div class="footer-social">
+      <p>Follow us on <a href="https://instagram.com/hobbyheadquarter" target="_blank">Instagram</a>!</p>
+    </div>
+
+    <ul class="footer-links">
+      <li><a href="restart.html">Home</a></li>
+      <li><a href="explorer.html">Hobby Explorer</a></li>
+      <li><a href="benefits.html">Benefits</a></li>
+      <li><a href="getstarted.html">Getting Started</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </div>
+</footer>
+		</body>
 </html>

@@ -253,6 +253,30 @@ body {
   .welcome {
     width: 90%;
   }
+	.about{
+		display: flex;
+	width: 48%;
+	padding: 20px;
+	}
+	.partner {
+		display: flex;
+	width: 48%;
+	padding: 20px;
+	}
+	.contactus {
+		display: flex;
+	width: 48%;
+	padding: 20px;
+	}
+	.contact-photo {
+		width:48%;
+	}
+
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+  }
+
 
   /* Footer: stack items vertically */
   .footer-content {
