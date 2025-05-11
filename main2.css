@@ -116,6 +116,7 @@ body {
   color: black;
   padding: 20px;
   margin: 20px;
+	border-radius: 8px;
 }
 
 .hobbies h4 {
@@ -150,7 +151,6 @@ body {
 }
 
 .hobbies h4 {
-  text-decoration: underline;
   color: #0077cc;
 }
 
