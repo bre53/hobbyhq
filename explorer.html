@@ -24,86 +24,96 @@
     </ul>
   </nav>
 	<div class="section">
-		<h2>HOBBY EXPLORER</h2>
+		<h1>HOBBY EXPLORER</h1>
 	</div>
+	<div class="filter-buttons">
+  <button class="filter-btn" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="art">Art</button>
+  <button class="filter-btn" data-filter="art">Creative</button>
+  <button class="filter-btn" data-filter="art">Fitness</button>
+  <button class="filter-btn" data-filter="creative">Intellectual</button>
+  <button class="filter-btn" data-filter="outdoors">Outdoors</button>
+  
+</div>
+
 	<div id="container2">
 
-  <div class="hobbies grid-1">
+  <div class="hobbies grid-1 creative">
     <h4><a href="getstarted.html">Baking</a></h4>
     <p>Create delicious treats and relax in your own kitchen.</p>
   </div>
 
-  <div class="hobbies grid-2">
+  <div class="hobbies grid-2 outdoors">
     <h4><a href="getstarted.html">Birdwatching</a></h4>
     <p>Discover and enjoy observing birds in their natural habitat.</p>
   </div>
 
-  <div class="hobbies grid-3">
+  <div class="hobbies grid-3 creative">
     <h4><a href="getstarted.html">Calligraphy</a></h4>
     <p>Create beautiful writing with decorative, artistic strokes and styles.</p>
   </div>
 
   <div class="hobbies">
-    <h4><a href="getstarted.html">Cooking</a></h4>
+    <h4><a href="getstarted.html creative">Cooking</a></h4>
     <p>Experiment with flavors and techniques to create satisfying meals.</p>
   </div>
 
-  <div class="hobbies">
+  <div class="hobbies outdoors fitness">
     <h4><a href="getstarted.html">Cycling</a></h4>
     <p>Improve fitness and explore neighborhoods or trails on two wheels.</p>
   </div>
 
-  <div class="hobbies">
+  <div class="hobbies creative art">
     <h4><a href="getstarted.html">Drawing</a></h4>
     <p>Express creativity with pencil, pen, or digital tools.</p>
   </div>
 
-  <div class="hobbies">
+  <div class="hobbies outdoors creative intellectual">
     <h4><a href="getstarted.html">Gardening</a></h4>
     <p>Grow flowers or vegetables and enjoy the outdoors.</p>
   </div>
 
-  <div class="hobbies">
+  <div class="hobbies outdoors fitness">
     <h4><a href="getstarted.html">Hiking</a></h4>
     <p>Explore nature trails and stay active in the great outdoors.</p>
   </div>
 
-  <div class="hobbies">
+  <div class="hobbies creative intellectual">
     <h4><a href="getstarted.html">Journaling</a></h4>
     <p>Reflect on thoughts and feelings through daily writing practice.</p>
   </div>
 
-  <div class="hobbies">
+  <div class="hobbies outdoor fitness">
     <h4><a href="getstarted.html">Kayaking</a></h4>
     <p>Explore lakes and rivers with a peaceful water adventure.</p>
   </div>
 
-  <div class="hobbies">
+  <div class="hobbies creative art">
     <h4><a href="getstarted.html">Knitting</a></h4>
     <p>Create handmade scarves, hats, and gifts stitch by stitch.</p>
   </div>
 
-  <div class="hobbies">
+  <div class="hobbies creative art">
     <h4><a href="getstarted.html">Painting</a></h4>
     <p>Bring imagination to life using color, brush, and canvas.</p>
   </div>
 
-  <div class="hobbies">
+  <div class="hobbies creative art">
     <h4><a href="getstarted.html">Photography</a></h4>
     <p>Capture life's beauty through your lens and perspective.</p>
   </div>
 
-  <div class="hobbies">
+  <div class="hobbies intellectual">
     <h4><a href="getstarted.html">Reading</a></h4>
     <p>Enjoy books and expand your knowledge or imagination.</p>
   </div>
 
-  <div class="hobbies">
+  <div class="hobbies outdoor fitness">
     <h4><a href="getstarted.html">Running</a></h4>
     <p>Boost health and clear your mind with regular runs.</p>
   </div>
 
-  <div class="hobbies">
+  <div class="hobbies outdoor creative">
     <h4><a href="getstarted.html">Woodworking</a></h4>
     <p>Create furniture, décor, or tools with your hands.</p>
   </div>
@@ -111,7 +121,21 @@
 	
 	
 		</div>
-	</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('.filter-btn').click(function () {
+      const filter = $(this).data('filter');
+
+      if (filter === 'all') {
+        $('.hobbies').show();
+      } else {
+        $('.hobbies').hide();
+        $('.' + filter).show();
+      }
+    });
+  });
+</script>
 
 </body>
 <footer>

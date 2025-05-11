@@ -326,6 +326,25 @@ body {
 .footer-links a:hover {
   color: #ffcc00;
 }
+.filter-buttons {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.filter-btn {
+  background-color: #4f97e3;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.filter-btn:hover {
+  background-color: #3a7fc0;
+}
 
 /* Responsive Layout for Smaller Screens */
 @media (max-width: 768px) {
