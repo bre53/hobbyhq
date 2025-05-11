@@ -60,6 +60,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
+  justify-content: center;
   margin: 0 auto;
   width: 100%;
   background-color: #4f97e3;
@@ -199,6 +200,37 @@ body {
 .cta p {
   font-size: 1.1rem;
 }
+.benefits-flex {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px;
+  background-color: #f9f9f9;
+  flex-wrap: nowrap;
+}
+
+.benefits-image {
+  flex: 1;
+  max-width: 400px;
+}
+
+.benefits-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.benefits-text {
+  flex: 1;
+  max-width: 500px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+.benefits-flex.reverse {
+  flex-direction: row-reverse;
+}
 
 .site-footer {
   background-color: #fff;
@@ -302,5 +334,16 @@ body {
   .tips,
   .hobby-list {
     flex-direction: column;
+  }
+	
+  .benefits-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .benefits-text,
+  .benefits-image {
+    max-width: 90%;
   }
 }
