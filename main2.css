@@ -135,17 +135,6 @@ body {
   line-height: 1.4;
 }
 
-.about,
-.partner,
-.contactus {
-  display: flex;
-  width: 48%;
-  padding: 20px;
-}
-
-.contact-photo {
-  width: 48%;
-}
 
 .info {
   display: flex;
@@ -235,6 +224,59 @@ body {
   flex-direction: row-reverse;
 }
 
+.flex-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 3rem 0;
+  align-items: center;
+  padding: 1rem;
+}
+
+.flex-section.reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-item {
+  flex: 1;
+  min-width: 300px;
+}
+
+.flex-item.image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.flex-item.text h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+}
+
+.flex-item.text p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+.contactus {
+  flex: 1;
+  max-width: 600px; /* You can adjust this width as needed */
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.contact-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+
 .site-footer {
   background-color: #fff;
   color: #000;
@@ -318,10 +360,25 @@ body {
   .welcome {
     width: 90%;
   }
-
-  .about-container {
+.contactus {
+  flex: 1;
+  max-width: 600px; /* You can adjust this width as needed */
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+	{
+  .contact-row {
     flex-direction: column;
+    align-items: center;
   }
+
+  .contactus,
+  .contact-photo {
+    max-width: 90%;
+  }
+}
 
   .footer-content {
     flex-direction: column;
@@ -339,7 +396,7 @@ body {
     flex-direction: column;
   }
 	
-  .benefits-flex {
+  .about-flex, .benefits-flex {
     flex-direction: column;
     align-items: center;
     text-align: center;
@@ -350,3 +407,5 @@ body {
     max-width: 90%;
   }
 }
+
+

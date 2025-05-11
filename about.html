@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Basic</title>
+  <title>About Us</title>
   <link href="main2.css" rel="stylesheet" type="text/css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +12,7 @@
 <body>
   <div id="container">
     
-    <!-- NAVIGATION -->
+ 
     <nav class="navbar">
       <div class="logo">
         <img src="assets/images/HobbyHQlogo.jpg" alt="Hobby HQ Logo">
@@ -26,57 +26,77 @@
       </ul>
     </nav>
 
-    <!-- MAIN CONTENT -->
-    <main id="container2">
-      <section class="item about">
-        <h2>About Us</h2>
-        <p>Welcome to Hobby HQ, your go-to destination for discovering new hobbies and finding fulfilling ways to spend your time. Whether you're looking to unwind, develop new skills, or simply add some fun to your daily routine, Hobby HQ is here to guide you on your journey.</p>
-        <p>We believe that hobbies are more than just pastimes—they’re opportunities to explore your passions, boost creativity, and improve overall well-being. Our mission is to help you find a hobby that fits your lifestyle by providing detailed insights, practical tips, and inspiration.</p>
-        <p>At Hobby HQ, we explore a wide variety of hobbies, from creative arts and outdoor adventures to tech-based activities and hands-on DIY projects. Each hobby we feature comes with key benefits, beginner-friendly guidance, and helpful resources to get you started.</p>
-        <p>No matter your experience level, there’s always something new to learn. Join us as we dive into the world of hobbies and help you find the perfect pastime that sparks joy and keeps you engaged.</p>
-      </section>
+    <div class="flex-section">
+      <div class="flex-item image">
+        <img src="assets/images/gaming.jpg" alt="Explore Hobbies">
+      </div>
+      <div class="flex-item text">
+        <h2>Welcome to Hobby HQ</h2>
+        <p>We help you discover fulfilling hobbies that enrich your daily life. Whether it's for relaxation, learning, or fun, we're here to guide your journey into something new and rewarding.</p>
+      </div>
+    </div>
 
-      <section class="item partner">
-        <h2>Partner</h2>
-        <p>Are you a brand, creator, or organization looking to connect with an engaged audience passionate about hobbies and personal growth? Hobby HQ welcomes opportunities for sponsorships, collaborations, and partnerships.</p>
-        <p>Whether you're interested in showcasing your products, sharing expertise, or working together on exciting projects, we’d love to hear from you.</p>
-        <p>Let’s inspire more people to discover new hobbies and enrich their lives. Reach out to us today to explore how we can work together!</p>
-      </section>
+    <div class="flex-section reverse">
+      <div class="flex-item text">
+        <h2>Why Hobbies Matter</h2>
+        <p>Hobbies aren't just fun—they improve mental health, boost creativity, and help you develop new skills. Our curated suggestions help you match your lifestyle and goals.</p>
+      </div>
+      <div class="flex-item image">
+        <img src="assets/images/photography.jpg" alt="Benefits of Hobbies">
+      </div>
+    </div>
 
-      <section class="item contact-row">
-        <div class="contact-photo">
-          <img src="assets/images/FindPassion.jpg" alt="Contact Us">
-        </div>
+    <div class="flex-section">
+      <div class="flex-item image">
+        <img src="assets/images/fishing.jpg" alt="Creative Projects">
+      </div>
+      <div class="flex-item text">
+        <h2>Wide Range of Interests</h2>
+        <p>From arts and crafts to tech and outdoor activities, Hobby HQ features something for everyone. Explore beginner tips, tools, and inspiration tailored to your interests.</p>
+      </div>
+    </div>
 
-        <div class="contactus">
-          <h2>Contact Us</h2>
-          <form>
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
+    <div class="flex-section reverse">
+      <div class="flex-item text">
+        <h2>Get Involved</h2>
+        <p>Want to partner with us or contribute to our mission? We’re open to collaborations with creators, educators, and organizations that share our passion for hobbies.</p>
+      </div>
+      <div class="flex-item image">
+        <img src="assets/images/art.jpg" alt="Partnership Opportunities">
+      </div>
+    </div>
 
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
+   
+    <div class="flex-section">
+      <div class="flex-item image">
+        <img src="assets/images/contact.jpg" alt="Contact Us">
+      </div>
+      <div class="flex-item text">
+        <h2>Contact Us</h2>
+        <form>
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" required><br><br>
 
-            <label for="message">Message:</label><br>
-            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required><br><br>
 
-            <button type="submit">Send</button>
-          </form>
-        </div>
-      </section>
-    </main>
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="5" required></textarea><br><br>
 
-    <!-- FOOTER -->
+          <button type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+
+  
     <footer class="site-footer">
       <div class="footer-content">
         <div class="logo">
           <img src="assets/images/HobbyHQlogo.jpg" alt="Logo">
         </div>
-
         <div class="footer-social">
           <p>Follow us on <a href="https://instagram.com/hobbyheadquarter" target="_blank">Instagram</a>!</p>
         </div>
-
         <ul class="footer-links">
           <li><a href="restart.html">Home</a></li>
           <li><a href="explorer.html">Hobby Explorer</a></li>
@@ -87,4 +107,6 @@
       </div>
     </footer>
 
-  </
+  </div>
+</body>
+</html>
