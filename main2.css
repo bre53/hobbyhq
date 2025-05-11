@@ -63,7 +63,10 @@ body {
   justify-content: center;
   margin: 0 auto;
   width: 100%;
-  background-color: #4f97e3;
+  background-image: url('assets/images/HHQ_BG.jpg');
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
   padding-top: 40px;
   padding-bottom: 40px;
   margin: 0 auto;
