@@ -259,7 +259,7 @@ body {
 }
 .contactus {
   flex: 1;
-  max-width: 600px; /* You can adjust this width as needed */
+  max-width: 600px;
   padding: 20px;
   background-color: white;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -346,7 +346,7 @@ body {
   background-color: #3a7fc0;
 }
 
-/* Responsive Layout for Smaller Screens */
+/* Responsive */
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -381,7 +381,7 @@ body {
   }
 .contactus {
   flex: 1;
-  max-width: 600px; /* You can adjust this width as needed */
+  max-width: 600px;
   padding: 20px;
   background-color: white;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -425,6 +425,5 @@ body {
   .benefits-image {
     max-width: 90%;
   }
-}
 
 
