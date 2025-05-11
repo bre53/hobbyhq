@@ -406,7 +406,7 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 }
-	{
+	
   .contact-row {
     flex-direction: column;
     align-items: center;
@@ -416,7 +416,6 @@ body {
   .contact-photo {
     max-width: 90%;
   }
-}
 
   .footer-content {
     flex-direction: column;
@@ -446,3 +445,4 @@ body {
   }
 
 
+}
